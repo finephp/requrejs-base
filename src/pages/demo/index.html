@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>title</title>
+    <link rel="stylesheet" href="../../assets/build_css/demo/index.css" />
+</head>
+<body>
+<div class="demo-index">
+    hello ,world
+</div>
+<div class="web_page" id="js-app">
+    <router-view></router-view>
+</div>
+
+<!-- build:js ../../assets/build/js/global.js -->
+<script type="text/javascript" src="../../assets/js/tmp.js"></script>
+<!-- endbuild -->
+<!-- build:js ../../assets/build/js/pages/shop/index.js -->
+<script type="text/javascript" src="../../assets/js/tmp.js"></script>
+<!-- endbuild -->
+
+<!-- script start -->
+<script type="text/javascript">
+    __setup__();
+    function __setup__() {
+        if(window.requirejs) {
+            __setup__app__();
+        } else {
+            setTimeout(__setup__, 1000);
+        }
+    }
+    function __setup__app__() {
+        var req = require.config({});
+        req(['main'], function(App) {
+        });
+    }
+</script>
+<!-- script end -->
+</body>
+</html>

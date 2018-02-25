@@ -1,0 +1,33 @@
+{
+  "name": "dxt_boss_web",
+  "version": "1.0.0",
+  "description": "1. ## 初始化 安装 npm 依赖并生成package.json\r npm init\r npm install gulp -g\r npm install gulp underscore --save-dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-prod": "node index-prod.js"
+  },
+  "author": "wtr",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "cluster": "^0.7.7",
+    "gulp-clean": "^0.3.2",
+    "gulp-less": "^3.3.0",
+    "gulp-log": "0.0.0",
+    "gulp-md5": "^0.1.2",
+    "gulp-qiniu": "^0.2.4",
+    "gulp-requirejs": "^1.0.0-rc1",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.1.1",
+    "gulp-uglify": "^2.1.2",
+    "gulp-useref": "^3.1.2",
+    "koa": "^1.2.4",
+    "koa-static": "^2.0.0",
+    "underscore": "^1.8.3"
+  },
+  "dependencies": {
+    "leancloud-storage": "^2.1.2"
+  }
+}
